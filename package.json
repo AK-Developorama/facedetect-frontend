@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.8.3",
     "clarifai": "^2.9.1",
     "clarifai-nodejs-grpc": "^7.4.0",
+    "fake-git-history": "^1.7.0",
     "particles.js": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

@@ -1,13 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', monospace;
+  font-family: 'Roboto';
   color: white;
   font-size: larger;
-  background: rgb(54, 54, 54)
+
+  overflow: hidden;    
+    -webkit-animation: v 20s infinite;
+    animation: v 20s infinite;
+}
+
+@keyframes v{
+  0% {background:#29ADF0;}
+  20%{background:#7a375d;}
+  40%{background:#e99b71;}
+  60%{background:#e6db8a;}
+  80%{background:#abdfaf;}
+  100%{background:#29ADF0;}
+}
+
+@-webkit-keyframes v{
+  0% {background:#103b50;}
+  20%{background:#ad4982;}
+  40%{background:#dd9066;}
+  60%{background:#e6db8a;}
+  80%{background:#75af7a;}
+  100%{background:#8acbec;}
 }
 
 button {
