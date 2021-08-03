@@ -1,7 +1,6 @@
 import React from "react";
 import "./Register.css";
 
-
 class Register extends React.Component {
   constructor(props) {
     super(props);
@@ -31,63 +30,74 @@ class Register extends React.Component {
       body: JSON.stringify({
         email: this.state.email,
         password: this.state.password,
-        name: this.state.name
+        name: this.state.name,
       }),
     })
       .then((response) => response.json())
-      .then(user => {
+      .then((user) => {
         if (user.id) {
-          this.props.loadUser(user)
+          this.props.loadUser(user);
           this.props.onRouteChange("home");
         }
       });
   };
 
   render() {
+    const { onRouteChange } = this.props;
 
     return (
-      <article className="br3 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
+      <article className="dataFieldsContainer br3 ba dark-gray b--black-10 mv4 shadow-5 center">
         <main className="pa4 black-80">
           <div className="measure">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-              <legend className="Register white">Register</legend>
-              <div className="mt3">
-                <label className="db fw6 lh-copy f6" htmlFor="name">
+              <div className="title">Register</div>
+              <div className="topFieldInput">
+                <label className="inputTitle db fw6 lh-copy f6" htmlFor="name">
                   Name
                 </label>
                 <input
                   onChange={this.onNameChange}
-                  className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                  className="inputText pa2 input-reset ba bg-transparent hover-bg-white-10 hover-white w-100"
                   type="text"
                   name="name"
                   id="name"
+                  placeholder="username"
                 />
               </div>
-              <div className="mt3">
-                <label className="db fw6 lh-copy f6" htmlFor="email-address">
+              <div className="emailRegister">
+                <label
+                  className="inputTitle db fw6 lh-copy f6"
+                  htmlFor="email-address"
+                >
                   Email
                 </label>
                 <input
                   onChange={this.onEmailChange}
-                  className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                  className="inputText pa2 input-reset ba bg-transparent hover-bg-white-10 hover-white w-100"
                   type="email"
                   name="email-address"
                   id="email-address"
+                  placeholder="user@gmail.com"
                 />
               </div>
-              <div className="mv3">
-                <label className="db fw6 lh-copy f6" htmlFor="password">
+              <div className="passwordRegister">
+                <label
+                  className="inputTitle db fw6 lh-copy f6"
+                  htmlFor="password"
+                >
                   Password
                 </label>
                 <input
                   onChange={this.onPasswordChange}
-                  className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                  className="inputText b pa2 input-reset ba bg-transparent hover-bg-white-10 hover-white w-100"
                   type="password"
                   name="password"
                   id="password"
+                  placeholder="•••••••••••"
                 />
               </div>
             </fieldset>
+
             <div className="">
               <input
                 onClick={this.onSubmitRegister}
@@ -96,7 +106,13 @@ class Register extends React.Component {
                 value="Sign me up!"
               />
             </div>
-            <div className="lh-copy mt3"></div>
+
+            <div
+              onClick={() => onRouteChange("signin")}
+              className=" signInAlternative lh-copy f6 link dim black db pointer"
+            >
+              <b>or Sign In</b>
+            </div>
           </div>
         </main>
       </article>

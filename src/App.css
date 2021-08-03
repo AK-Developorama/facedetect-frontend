@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 100vw;
 }
 
 .center {
@@ -7,11 +8,34 @@
   justify-content: center;
 }
 
+article.dataFieldsContainer {
+  margin-top: calc(50px + 2vw);
+  width: calc(50px + 20rem);
+  
+ 
+ 
+}
+
+@media (max-width: 400px) {
+  div.wrapper {
+    width: 100%;
+  }
+
+  .App {
+  text-align: center;
+  min-width: 50rem;
+}
+/*   article.dataFieldsContainer {
+     width: calc(200px + 20rem);
 
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+} */
+}
+
+@media (max-width: 570px) {
+  nav.link-wrapper {
+    display: none;
+  }
+
+  
 }

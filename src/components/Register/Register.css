@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap');
-legend.Register {
-    font-family:'Archivo Narrow';
-    font-size:2.7rem ;
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap");
+
+div.signInAlternative{
+    margin-top: 1.4rem;
 }
+

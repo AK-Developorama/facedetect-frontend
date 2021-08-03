@@ -24,4 +24,18 @@ postgreSQL, gui pg admin4
 
 knex.js to integrate postgrSQL with node
 
+<!-- to do:
 
+
+fix inside detect button 
+
+make green hover for links 
+
+favicon
+
+link avatar to the unsplash API
+
+link facedetect logo back to netlify landing page 
+
+
+ -->

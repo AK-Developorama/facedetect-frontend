@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --primary-color: rgb(68, 68, 68);
+  --primary-variant: rgb(24, 23, 23);
+  --secondary-color: rgb(38, 166, 154);
+  --base: white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin: 0 auto 0 auto;
+  background-color: var(--base);
+  height: calc(56px + 2vw) !important;
+  line-height: calc(56px + 2vw) !important;
+}
+
+div.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  width: 90%;
+}
+
+div.imageWrapper {
+  display: block;
+}
+
+.link-wrapper {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  align-items: center;
+}
+
+a.externalLink,
+p.internalNavItems {
+  color: var(--primary-variant);
+  padding: 0 15px;
+  font-size: calc(13px + 0.2vw) !important;
+  font-weight: 300 !important;
+}
+
+a.externalLink:hover, p.internalNavItems:hover {
+  background-color: rgb(127, 211, 202);
+}
+
+img.logoPic {
+  vertical-align: middle;
+  height: calc(15px + 0.8vw);
+  line-height: calc(56px + 2vw);
+}

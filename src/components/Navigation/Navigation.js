@@ -1,34 +1,97 @@
 import React from "react";
+import "./Navigation.css";
+import logoPic from "./logoPic.jpg";
+
+/* const Navigation = ({ onRouteChange, isSignIn }) => {
+    return (
+        <div className="wrapper">
+        <Logo/>
+        <RightNav onRouteChange={onRouteChange} isSignIn={isSignIn}/> 
+        </div>
+    )
+}
+
+export default Navigation; */
+
+//old
 
 const Navigation = ({ onRouteChange, isSignedIn }) => {
   if (isSignedIn) {
     return (
-      <nav style={{ display: "flex", justifyContent: "flex-end" }}>
-        <p
-          onClick={() => onRouteChange("signout")}
-          className="link dim black pa3 pointer"
-        >
-          Sign Out
-        </p>
-      </nav>
+      <div className="wrapper">
+        <div className="navbarContainer">
+          <div className="imageWrapper">
+            <a
+              href="https://github.com/developorama/face-recognition-frontend"
+            >
+              <img src={logoPic} className="logoPic" />
+            </a>{" "}
+          </div>
+
+          <nav className="link-wrapper">
+            <p
+              onClick={() => onRouteChange("signout")}
+              className="internalNavItems link pointer"
+            >
+              Sign Out
+            </p>
+
+            <p
+              href="https://github.com/developorama/face-recognition-frontend"
+              className="internalNavItems link pointer"
+            >
+              GitHub
+            </p>
+
+            <a
+              href="https://developorama.com"
+              className="externalLink link pointer"
+            >
+              Contact
+            </a>
+          </nav>
+        </div>
+      </div>
     );
   } else {
     return (
-      <nav style={{ display: "flex", justifyContent: "flex-end" }}>
-        <p
-          onClick={() => onRouteChange("signin")}
-          className="link dim black pa3 pointer"
-        >
-          Sign In
-        </p>
-
-        <p
-          onClick={() => onRouteChange("register")}
-          className="link dim black pa3 pointer"
-        >
-          Register
-        </p>
-      </nav>
+      <div className="wrapper">
+        <div className="navbarContainer">
+          <div className="imageWrapper">
+            <a
+              href="https://github.com/developorama/face-recognition-frontend"
+            >
+              <img src={logoPic} className="logoPic" />
+            </a>
+          </div>
+          <nav className="link-wrapper">
+            <p
+              onClick={() => onRouteChange("signin")}
+              className="internalNavItems link pointer"
+            >
+              Sign In
+            </p>
+            <p
+              onClick={() => onRouteChange("register")}
+              className="internalNavItems link pointer"
+            >
+              Register
+            </p>
+            <a
+              href="https://github.com/developorama/face-recognition-frontend"
+              className="externalLink link pointer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://developorama.com"
+              className="externalLink link pointer"
+            >
+              Contact
+            </a>
+          </nav>
+        </div>
+      </div>
     );
   }
 };
