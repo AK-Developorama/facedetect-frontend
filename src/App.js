@@ -8,25 +8,20 @@ import Signin from "./components/Signin/Signin";
 import Register from "./components/Register/Register";
 import "./App.css";
 
-
-
-
 const initialState = {
-  
-      input: "",
-      imageUrl: "",
-      box: {},
-      route: "signin",
-      isSignedIn: false,
-      user: {
-        id: "",
-        name: "",
-        email: "",
-        entries: 0,
-        joined: "",
-      }
-
-}
+  input: "",
+  imageUrl: "",
+  box: {},
+  route: "signin",
+  isSignedIn: false,
+  user: {
+    id: "",
+    name: "",
+    email: "",
+    entries: 0,
+    joined: "",
+  },
+};
 
 class App extends Component {
   constructor() {
@@ -49,7 +44,7 @@ class App extends Component {
   //new added here:
 
   onSubmitRegister = (email, password, name) => {
-    fetch("http://localhost:3000/register", {
+    fetch("https://polar-ravine-30699.herokuapp.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -75,7 +70,7 @@ class App extends Component {
     const email = "guest@gmail.com";
     const password = "password";
     const name = "Guest";
-    fetch("http://localhost:3000/signin", {
+    fetch("https://polar-ravine-30699.herokuapp.com/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -98,7 +93,7 @@ class App extends Component {
 
   deleteUser = (email, password) => {
     console.log(email, password);
-    fetch("http://localhost:3000/delete", {
+    fetch("https://polar-ravine-30699.herokuapp.com/delete", {
       method: "delete",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -136,7 +131,7 @@ class App extends Component {
 
   onPictureSubmit = () => {
     this.setState({ imageUrl: this.state.input });
-    fetch("http://localhost:3000/imageurl", {
+    fetch("https://polar-ravine-30699.herokuapp.com/imageurl", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -147,7 +142,7 @@ class App extends Component {
 
       .then((response) => {
         if (response) {
-          fetch("http://localhost:3000/image", {
+          fetch("https://polar-ravine-30699.herokuapp.com/image", {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -175,7 +170,7 @@ class App extends Component {
 
     document.body.appendChild(script);
 
-    fetch("http://localhost:3000/")
+    fetch("https://polar-ravine-30699.herokuapp.com")
       .then((response) => response.json())
       .then(console.log);
     this.createGuest();
@@ -202,7 +197,7 @@ class App extends Component {
         />
         {route === "home" ? (
           <div>
-            <Avatar/>
+            <Avatar />
             <Rank
               name={this.state.user.name}
               entries={this.state.user.entries}
@@ -228,8 +223,6 @@ class App extends Component {
 
 export default App;
 
-
- 
 /*
 
 https://3.bp.blogspot.com/_1K8KYIJqRMU/TMcbnY-XKmI/AAAAAAAAAH0/eUHLwqsyj5E/s1600/scottmags_0458.JPG
@@ -237,7 +230,3 @@ https://3.bp.blogspot.com/_1K8KYIJqRMU/TMcbnY-XKmI/AAAAAAAAAH0/eUHLwqsyj5E/s1600
 
 
 */
-
-
-
-

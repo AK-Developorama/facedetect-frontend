@@ -21,9 +21,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
       <div className="wrapper">
         <div className="navbarContainer">
           <div className="imageWrapper">
-            <a
-              href="https://github.com/developorama/face-recognition-frontend"
-            >
+            <a href="https://codepen.io/developorama/live/a5cc2629bc8959f12ac75b172122ccf0">
               <img src={logoPic} className="logoPic" />
             </a>{" "}
           </div>
@@ -58,9 +56,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
       <div className="wrapper">
         <div className="navbarContainer">
           <div className="imageWrapper">
-            <a
-              href="https://github.com/developorama/face-recognition-frontend"
-            >
+            <a href="https://codepen.io/developorama/live/a5cc2629bc8959f12ac75b172122ccf0">
               <img src={logoPic} className="logoPic" />
             </a>
           </div>
@@ -78,7 +74,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
               Register
             </p>
             <a
-              href="https://github.com/developorama/face-recognition-frontend"
+              href="https://github.com/developorama/facedetect-frontend"
               className="externalLink link pointer"
             >
               GitHub
