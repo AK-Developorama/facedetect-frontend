@@ -19,8 +19,8 @@ const initialState = {
     name: "",
     email: "",
     entries: 0,
-    joined: "",
-  },
+    joined: ""
+  }
 };
 
 class App extends Component {
@@ -36,8 +36,8 @@ class App extends Component {
         name: data.name,
         email: data.email,
         entries: data.entries,
-        joined: data.joined,
-      },
+        joined: data.joined
+      }
     });
   };
 
@@ -50,8 +50,8 @@ class App extends Component {
       body: JSON.stringify({
         email: email,
         password: password,
-        name: name,
-      }),
+        name: name
+      })
     })
       .then((response) => response.json())
       .then((user) => {
@@ -75,8 +75,8 @@ class App extends Component {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         email: email,
-        password: password,
-      }),
+        password: password
+      })
     })
       .then((response) => response.json())
       .then((user) => {
@@ -98,7 +98,7 @@ class App extends Component {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         email: email,
-        password: password,
+        password: password
       }),
     }).then((response) => response.json());
   };
@@ -135,7 +135,7 @@ class App extends Component {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        input: this.state.input,
+        input: this.state.input
       }),
     })
       .then((response) => response.json())
@@ -146,7 +146,7 @@ class App extends Component {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-              id: this.state.user.id,
+              id: this.state.user.id
             }),
           })
             .then((response) => response.json())

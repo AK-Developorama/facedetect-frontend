@@ -24,13 +24,13 @@ const logGuest = (
   );
   if (type === "register") {
     console.log("register");
-    fetch("http://localhost:3000/register", {
+    fetch("https://polar-ravine-30699.herokuapp.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         email: email,
         password: password,
-        name: name,
+        name: name
       }),
     })
       .then((response) => response.json())
@@ -49,12 +49,12 @@ const logGuest = (
       email = "guest@gmail.com";
       password = "password";
     }
-    fetch("http://localhost:3000/signin", {
+    fetch("https://polar-ravine-30699.herokuapp.com/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         email: email,
-        password: password,
+        password: password
       }),
     })
       .then((response) => response.json())

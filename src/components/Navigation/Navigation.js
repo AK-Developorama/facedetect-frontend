@@ -2,18 +2,6 @@ import React from "react";
 import "./Navigation.css";
 import logoPic from "./logoPic.jpg";
 
-/* const Navigation = ({ onRouteChange, isSignIn }) => {
-    return (
-        <div className="wrapper">
-        <Logo/>
-        <RightNav onRouteChange={onRouteChange} isSignIn={isSignIn}/> 
-        </div>
-    )
-}
-
-export default Navigation; */
-
-//old
 
 const Navigation = ({ onRouteChange, isSignedIn }) => {
   if (isSignedIn) {
