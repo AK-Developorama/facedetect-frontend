@@ -23,7 +23,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
             </p>
 
             <p
-              href="https://github.com/developorama/face-recognition-frontend"
+              href="https://github.com/AK-Developorama/facedetect-frontend"
               className="internalNavItems link pointer"
             >
               GitHub
