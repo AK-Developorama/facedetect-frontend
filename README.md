@@ -1,3 +1,5 @@
+### LIVE SITE: https://codepen.io/developorama/live/a5cc2629bc8959f12ac75b172122ccf0
+
 ### project uses:
 
 # FRONT END
@@ -31,16 +33,8 @@ knex.js to integrate postgrSQL with node
 
 - added BASH, a subsystem for Linux, that enabled environmental variables to replace hard coded values such as Port numbers (unsafe)
 
-# FUTURE IMPROVEMENTS:
 
 
-
-<!-- to do:
-
-
-validation can be improved, add error message if improper email format is entered/ or left blank
-
-future idea: link avatar to the unsplash API
 
 front and back end each need to do their validation
 
