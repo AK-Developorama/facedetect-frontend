@@ -1,46 +1,42 @@
-### project uses:
+App Hosted Live: https://facedetect--frontend.herokuapp.com/
 
-# FRONT END
+Separately Designed Landing Page: https://codepen.io/developorama/live/a5cc2629bc8959f12ac75b172122ccf0
+
+
+---project uses---
+
+FRONT END
 
 tachyons
 
-clarifai api (now js is discontinued but project still works)
+clarifai api (now support for JS is discontinued but project still works)
 
-# BACK END
+BACK END
 
-node.js (back-end JavaScript runtime environment),
-express.js (framework)
+node.js,
+express.js
 
 axios - promise based HTTP client for the browser and node.js
 
-bcrypt-nodejs used to hash the passwords
+bcrypt-nodejs - used to hash the user passwords
 
-postman for running the express server locally, that responds to postman test scripts requests
+also used postman for running the express server locally for testing
 
-# DATABASE
+DATABASE
 
 postgreSQL, gui pg admin4
 
 knex.js to integrate postgrSQL with node
 
-# SECURITY
+SECURITY
 
-- front and back end each need to do their validation
+front and back end each need to do their validation
 
-- API key moved from frontend to backend
-
-- added BASH, a subsystem for Linux, that enabled environmental variables to replace hard coded values such as Port numbers (unsafe)
-
-# FUTURE IMPROVEMENTS:
+API key succesfully hidden as Environmental Variable
 
 
 
-<!-- to do:
 
-
-validation can be improved, add error message if improper email format is entered/ or left blank
-
-future idea: link avatar to the unsplash API
 
 front and back end each need to do their validation
 
