@@ -2,7 +2,6 @@ import React from "react";
 import "./Navigation.css";
 import logoPic from "./logoPic.jpg";
 
-
 const Navigation = ({ onRouteChange, isSignedIn }) => {
   if (isSignedIn) {
     return (
@@ -64,11 +63,15 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
             <a
               href="https://github.com/developorama/facedetect-frontend"
               className="externalLink link pointer"
+              target="_blank"
+              rel="noreferrer"
             >
               GitHub
             </a>
             <a
-              href="https://developorama.com"
+              href="mailto:aliz.kopenetz@google.com"
+              target="_blank"
+              rel="noreferrer"
               className="externalLink link pointer"
             >
               Contact
