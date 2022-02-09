@@ -37,8 +37,3 @@ API key succesfully hidden as Environmental Variable
 
 
 
-
-front and back end each need to do their validation
-
-API key moved from frontend to backend
- -->
