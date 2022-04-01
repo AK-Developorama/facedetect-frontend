@@ -53,6 +53,10 @@ At the moment only 1 face is detected. I am planning to extend the app soon to d
 
 In the project directory, you can run:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7f1f49493e0da2479f5b2df1aad4d592420f2b62
 ### npm start
 
 Runs the app in the development mode.
@@ -90,3 +94,8 @@ Security
 - front- and back-end each need to do their validation
 
 - API key succesfully hidden as Environmental Variable
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 84aa0cbbc2df1ab5ff28a4cd9292273f3f36c423
+>>>>>>> 7f1f49493e0da2479f5b2df1aad4d592420f2b62
